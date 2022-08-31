@@ -100,7 +100,6 @@ public class TerrainGenerator : ITerrainGenerator
         _meshGenerator.SetChunkMesh(mesh, _parameters.ChunkObject, _chunks);
 
         SetCollider(newObject, ref mesh);
-        //newObject.isStatic = true;
     }
 
     private void SetParameters(IStaticDataService staticDataService)
@@ -110,13 +109,13 @@ public class TerrainGenerator : ITerrainGenerator
 
     private Mesh GetMesh(GameObject gameObject)
     {
-        Mesh mesh = null;
+        Mesh mesh;
         MeshFilter meshFilter = gameObject.GetComponent<MeshFilter>();  
         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();     
 
         meshRenderer.material = _material;
 
-        if (Application.isEditor == true)
+        if (Application.isEditor)
         {
             mesh = meshFilter.sharedMesh;
             if (mesh == null)

@@ -16,6 +16,6 @@ MonoBehaviour:
   atlasIndexSize: {x: 10, y: 10}
   data:
   - type: 0
-    localIndexTop: {x: 7, y: 6}
-    localIndexSide: {x: 7, y: 7}
-    localIndexBottom: {x: 5, y: 8}
+    localIndexTop: {x: 6, y: 8}
+    localIndexSide: {x: 7, y: 5}
+    localIndexBottom: {x: 7, y: 6}

@@ -1,4 +1,4 @@
-﻿public enum LayersType
+public enum LayersType
 {
     Null,
     Tree,

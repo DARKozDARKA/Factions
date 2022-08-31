@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07a4acf2d7883cd48a8e11622a92f721, type: 3}
-  m_Name: Tree01
+  m_Name: Tree04
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 1115952290262955638, guid: e589a3f5f4541cf40aa93518a68b102b, type: 3}
-  Size: {x: 5, y: 0, z: 5}
-  Rarity: 0.01
+  Prefab: {fileID: 7954225500743275221, guid: fd62c83a81da2e9468eb6ff786b767bc, type: 3}
+  Size: {x: 3, y: 0, z: 3}
+  Rarity: 0.5
   RotationType: 2
-  WoodAmount: 10
+  WoodAmount: 3

@@ -19,8 +19,8 @@ public abstract class LayerGenerator
         if (!_map.CheckCleanRect(fixedPosition, size))
             return null;
 
-        Vector3 objectWorldPosition = new Vector3(fixedPosition.x, _map.GetSurfaceBlock(fixedPosition).surfaceHeight,
-            fixedPosition.y);
+        Vector3 objectWorldPosition = new Vector3(position.x, _map.GetSurfaceBlock(fixedPosition).surfaceHeight,
+            position.y);
         _map.OccupieRect(fixedPosition, size);
 
         return objectWorldPosition;

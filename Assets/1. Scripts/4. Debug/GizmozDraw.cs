@@ -1,20 +1,32 @@
 using System;
 using System.Collections.Generic;
 using CodeBase.TerrainGenerator;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class GizmozDraw : MonoBehaviour
 {
-    public bool activate = false;
+    private bool _activate = false;
     private TerrainMap _map;
     private MapProvider _provider;
     private bool _generated = false;
     private List<GizmozBlock> _blocks = new List<GizmozBlock>();
+    private string _buttonName = "Activate";
 
     public void Construct(MapProvider provider)
     {
         _provider = provider;
         DontDestroyOnLoad(gameObject);
+    }
+
+    [Button("$_buttonName", ButtonSizes.Large)]
+    public void ActivateButton()
+    {
+        _activate = !_activate;
+        if (_activate)
+            _buttonName = "Diactivate";
+        else
+            _buttonName = "Activate";
     }
 
     public void SetMap()
@@ -29,7 +41,7 @@ public class GizmozDraw : MonoBehaviour
         if (_map == null)
             return;
 
-        if (activate == false)
+        if (_activate == false)
             return;
 
         if (_generated)

@@ -1,4 +1,4 @@
-﻿public enum RotationType
+public enum RotationType
 {
     DoNotRotate,
     RandomizeBy90,

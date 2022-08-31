@@ -1,5 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="beacbf4d-d8e6-45d2-ab13-f68dc8e9475b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Factions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/2. States/GameStateMachine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/2. States/GameStateMachine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/4. AssetManagment/AssetsPath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/4. AssetManagment/AssetsPath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/ILayersGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/ILayersGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/LayerGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/LayerGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/LayersType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/5. Installers/LayersType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/1. Strings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/1. Strings/SceneNames.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/1. Strings/SceneNames.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/1. Strings/StaticDataPath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/1. Strings/StaticDataPath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/BlockTextureDataContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/BlockTextureDataContainer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/NatureData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/NatureData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/RotationType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/RotationType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/TerrainGeneratorParametersData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/TerrainGeneratorParametersData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/TreeData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/1. Infrastructure/6. StaticData/2. ScriptableObjects/TreeData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Layers/LayerGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Layers/LayerGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Mesh/enumQuad.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Mesh/enumQuad.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Terrain/BlockType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/Terrain/BlockType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/TerrainGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Scripts/2. Generator/TerrainGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/4. Debug/GizmozDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1. Scripts/4. Debug/GizmozDraw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/Extensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1. Scripts/Extensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/nope.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/nope.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/деврево нормальна.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/деврево нормальна.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/ебанутое деревоvoнарсаx.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/ебанутое деревоvoнарсаx.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/камень нахуууууй.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/камень нахуууууй.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/крутой камень мне нравится.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/крутой камень мне нравится.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/фиалка и потэнциально роза.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/1. Models/фиалка и потэнциально роза.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/nope.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/nope.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/деврево нормальна.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/деврево нормальна.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/камень нахуууууй.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/камень нахуууууй.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/крутой камень мне нравится (2).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/крутой камень мне нравится (2).mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/крутой камень мне нравится.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/крутой камень мне нравится.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза (2).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза (2).mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза (3).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза (3).mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/Materials/фиалка и потэнциально роза.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/nope.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/nope.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/деврево нормальна.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/деврево нормальна.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/камень нахуууууй.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/камень нахуууууй.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/крутой камень мне нравится (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/крутой камень мне нравится (2).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/крутой камень мне нравится.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/крутой камень мне нравится.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза (2).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза (3).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2. Art/2. Textures/Ilya/фиалка и потэнциально роза.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3. Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3. Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Debug/GizmozDebugger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Debug/GizmozDebugger.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/StaticData/BlockTextureData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/StaticData/BlockTextureData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/StaticData/Terrain/Objects/Trees/Tree01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/StaticData/Terrain/Objects/Trees/Tree01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Chunk/Chunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Chunk/Chunk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Grass/Grass04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Rocks/Rock04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree03.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree04.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4. Prefabs/Resources/Terrain/Nature/Trees/Tree04.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default_Rocks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default_Rocks.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default_Trees.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/9. Assets/MedieVox/Materials/Chroma_Default_Trees.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/9. Assets/Plugins/Zenject/Source/Runtime/SceneContextRegistry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/9. Assets/Plugins/Zenject/Source/Runtime/SceneContextRegistry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="2E8IJJ9hU2t9qH4xEsPg3Nl6m4H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "rider.run.widget.enabled.cache": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../!MyGames/Factions/Exe\Factions.exe" />
@@ -38,4 +163,21 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="beacbf4d-d8e6-45d2-ab13-f68dc8e9475b" name="Changes" comment="" />
+      <created>1661970785773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661970785773</updated>
+      <workItem from="1661970786781" duration="596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
 </project>
