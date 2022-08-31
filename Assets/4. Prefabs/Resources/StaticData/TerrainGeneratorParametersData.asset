@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c56743a56208ca4aa1ad99d86dc9135, type: 3}
+  m_Name: TerrainGeneratorParametersData
+  m_EditorClassIdentifier: 
+  MapSize: {x: 30, y: 30}
+  ChunkSize: {x: 6, y: 30, z: 6}
+  TerrainParameters:
+  - perlinScale: 1.94
+    terrainHeight: 0.514
+    xPerlinOffset: 0
+    zPerlinOffset: 0
+  BlockSize: 1
+  HeightModifier: 16
