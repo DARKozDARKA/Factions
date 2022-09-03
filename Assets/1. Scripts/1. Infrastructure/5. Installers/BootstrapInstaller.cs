@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using CodeBase.Infastructure;
 using CodeBase.TerrainGenerator;
 using UnityEngine;
@@ -13,6 +11,11 @@ public class BootstrapInstaller : MonoInstaller
     public override void InstallBindings()
     {
         RegisterServices();
+    }
+
+    public override void Start()
+    {
+        base.Start();
         Container.Resolve<GameStateMachine>().Enter<BootstrapState>();
     }
 

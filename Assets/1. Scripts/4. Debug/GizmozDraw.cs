@@ -11,6 +11,8 @@ public class GizmozDraw : MonoBehaviour
     private MapProvider _provider;
     private bool _generated = false;
     private List<GizmozBlock> _blocks = new List<GizmozBlock>();
+    
+#pragma warning disable 0414
     private string _buttonName = "Activate";
 
     public void Construct(MapProvider provider)

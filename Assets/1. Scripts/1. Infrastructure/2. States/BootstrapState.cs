@@ -12,7 +12,6 @@ namespace CodeBase.Infastructure
         {
             _stateMachine = stateMachine;
             _sceneLoader = sceneLoader;
-
         }
 
         public void Enter()
@@ -24,8 +23,7 @@ namespace CodeBase.Infastructure
         {
             _stateMachine.Enter<LoadLevelState, string>(SceneNames.MainScene);
         }
-
-
+        
         public void Exit()
         {
 

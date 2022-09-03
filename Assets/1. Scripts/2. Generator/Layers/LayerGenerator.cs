@@ -1,14 +1,18 @@
+using System;
 using System.Linq;
 using CodeBase.Infastructure;
 using CodeBase.TerrainGenerator;
+using Sirenix.OdinInspector;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
+[Serializable]
 public abstract class LayerGenerator
 {
     protected TerrainMap _map;
     protected INatureGameFactory _natureFactory;
 
-    public abstract void GenerateLayer();
+    public abstract void GenerateLayer(TerrainMap map, INatureGameFactory natureFactory);
 
     protected Vector3? SetRandomPosition(Vector2Int size)
     {

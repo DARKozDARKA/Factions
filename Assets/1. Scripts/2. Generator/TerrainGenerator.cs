@@ -19,7 +19,7 @@ public class TerrainGenerator : ITerrainGenerator
     private NavMeshSurfaceBaker _navMeshBaker;
     private TerrainMap _terrainMap;
     private TerrainGeneratorParametersData _parameters;
-    private TreeLayerGenerator _treeLayerGeneratorGenerator;
+    private BasicLayerGenerator _basicLayerGeneratorGenerator;
     private TerrainMap _map;
 
     private TerrainGenerator(BlockTextureAtlas textureAtlas, IPrefabGameFactory prefabFactory, IStaticDataService staticDataService, INatureGameFactory natureFactory)

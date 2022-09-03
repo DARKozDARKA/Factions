@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
-[CreateAssetMenu(fileName = "TreeData", menuName = "StaticData/TreeData")]
+[CreateAssetMenu(fileName = "TreeData", menuName = "StaticData/NatureData/TreeData")]
 public class TreeData : NatureData
 {
     public int WoodAmount;

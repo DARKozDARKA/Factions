@@ -15,7 +15,6 @@ namespace CodeBase.Infastructure
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _curtain = curtain;
-            //_factory = factory;
         }
 
         public void Enter(string name)
@@ -28,8 +27,7 @@ namespace CodeBase.Infastructure
         {
             _gameStateMachine.Enter<GenerateTerrainState>();
         }
-
-
+        
         public void Exit()
         {
 

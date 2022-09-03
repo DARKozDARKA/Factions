@@ -1,34 +1,26 @@
-﻿using CodeBase.Infastructure;
+﻿using System.Collections.Generic;
+using CodeBase.Infastructure;
 using CodeBase.TerrainGenerator;
 
 public class LayersGenerator : ILayersGenerator
 {
     private readonly MapProvider _mapProvider;
     private readonly INatureGameFactory _natureGameFactory;
+    private readonly List<LayerGeneratorData> _generators;
 
-    public LayersGenerator(MapProvider mapProvider, INatureGameFactory natureGameFactory)
+    public LayersGenerator(MapProvider mapProvider, INatureGameFactory natureGameFactory, IStaticDataService dataService)
     {
         _mapProvider = mapProvider;
         _natureGameFactory = natureGameFactory;
+        _generators = dataService.GetData<LayerGeneratorsData>(StaticDataPath.LayerGeneratorsDataPath).LayersGenerators;
     }
 
     public void GenerateLayers()
     {
         TerrainMap map = _mapProvider.map;
-        
-        GenerateTreeLayer(map);
-        GenerateStoneLayer(map);
-    }
 
-    private void GenerateTreeLayer(TerrainMap map)
-    {
-        var treeGenerator = new TreeLayerGenerator(map, _natureGameFactory);
-        treeGenerator.GenerateLayer();
-    }
-    
-    private void GenerateStoneLayer(TerrainMap map)
-    {
-        //var treeGenerator = new Tree(map, _natureGameFactory);
-        //treeGenerator.GenerateLayer();
+        foreach (var generator in _generators)
+            generator.LayerGenerator.GenerateLayer(_mapProvider.map, _natureGameFactory);
+        
     }
 }

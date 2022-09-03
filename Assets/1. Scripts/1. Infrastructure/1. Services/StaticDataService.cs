@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using CodeBase.TerrainGenerator;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace CodeBase.Infastructure
 {
@@ -32,6 +34,11 @@ namespace CodeBase.Infastructure
         public TerrainGeneratorParametersData GetTerrainGeneratorParametersData()
         {
             return _terrainGeneratorParametersData;
+        }
+
+        public T GetData<T>(string path) where T : ScriptableObject
+        {
+            return Resources.Load<T>(path);
         }
     }
 }

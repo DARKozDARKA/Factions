@@ -22,15 +22,12 @@ namespace CodeBase.Infastructure
 
         private IEnumerator LoadScene(string sceneName, Action action)
         {
-
             if (SceneManager.GetActiveScene().name == sceneName)
             {
-
                 action?.Invoke();
                 yield break;
             }
-
-
+            
             AsyncOperation newScene = SceneManager.LoadSceneAsync(sceneName);
 
             while (!newScene.isDone)

@@ -1,4 +1,5 @@
 using CodeBase.TerrainGenerator;
+using UnityEngine;
 
 namespace CodeBase.Infastructure
 {
@@ -7,5 +8,6 @@ namespace CodeBase.Infastructure
         void Load();
         BlockTextureDataContainer GetTextureContainer();
         TerrainGeneratorParametersData GetTerrainGeneratorParametersData();
+        T GetData<T>(string path) where T : ScriptableObject;
     }
 }

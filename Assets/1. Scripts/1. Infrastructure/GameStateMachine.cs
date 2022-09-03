@@ -54,7 +54,6 @@ namespace CodeBase.Infastructure
         {
             return _states[typeof(TState)] as TState;
         }
-
     }
 }
 
