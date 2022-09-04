@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a4acf2d7883cd48a8e11622a92f721, type: 3}
   m_Name: Tree01
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 1115952290262955638, guid: e589a3f5f4541cf40aa93518a68b102b, type: 3}
+  Prefab:
+    m_AssetGUID: e589a3f5f4541cf40aa93518a68b102b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   Size: {x: 5, y: 0, z: 5}
   Rarity: 0.01
   RotationType: 2

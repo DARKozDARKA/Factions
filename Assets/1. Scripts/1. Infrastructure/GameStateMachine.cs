@@ -23,7 +23,7 @@ namespace CodeBase.Infastructure
             _states = new Dictionary<Type, IExitableState>()
             {
                 {typeof(BootstrapState), new BootstrapState(this, _sceneLoader)},
-                {typeof(LoadLevelState), new LoadLevelState(this, _sceneLoader, curtain)},
+                {typeof(LoadLevelState), new LoadLevelState(this, _sceneLoader, curtain, container.Resolve<IAssetProvider>(), container.Resolve<IPrefabGameFactory>())},
                 {typeof(GenerateTerrainState), new GenerateTerrainState(this, container.Resolve<ITerrainGenerator>(), curtain, container.Resolve<MapProvider>(), 
                     container.Resolve<DebugProvider>(), container.Resolve<ILayersGenerator>())},
                 {typeof(GameLoopState), new GameLoopState(this, _sceneLoader)}

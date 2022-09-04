@@ -1,14 +1,26 @@
 using System;
 using UnityEngine;
 using System.Linq;
+using System.Threading.Tasks;
 using Random = UnityEngine.Random;
 
 namespace CodeBase.Infastructure
 {
     public class NatureGameFactory : INatureGameFactory
     {
-        public GameObject CreateNature(NatureData data, Vector3 at) => 
-            GameObject.Instantiate(data.Prefab, at, CreateRotation(data.RotationType));
+        private readonly IAssetProvider _assetProvider;
+
+        public NatureGameFactory(IAssetProvider assetProvider)
+        {
+            _assetProvider = assetProvider;
+        }
+
+        public async Task<GameObject> CreateNature(NatureData data, Vector3 at)
+        {
+            GameObject prefab = await _assetProvider.Load<GameObject>(data.Prefab);
+            return GameObject.Instantiate(prefab, at, CreateRotation(data.RotationType));
+        } 
+           
         
         private Quaternion CreateRotation(RotationType rotationType)
         {

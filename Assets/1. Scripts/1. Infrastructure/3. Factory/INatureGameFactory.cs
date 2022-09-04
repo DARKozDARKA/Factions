@@ -1,9 +1,10 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CodeBase.Infastructure
 {
     public interface INatureGameFactory
     {
-        GameObject CreateNature(NatureData data, Vector3 at);
+        Task<GameObject> CreateNature(NatureData data, Vector3 at);
     }
 }

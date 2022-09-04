@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dc4858eb8f04e76b31f749fb486d75a, type: 3}
   m_Name: Rock01
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4791657619875147895, guid: 5b39011551942264e960277824cff73d, type: 3}
+  Prefab:
+    m_AssetGUID: 5b39011551942264e960277824cff73d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   Size: {x: 6, y: 0, z: 6}
   Rarity: 0.05
   RotationType: 0

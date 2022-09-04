@@ -75,7 +75,7 @@ public class TerrainGenerator : ITerrainGenerator
         }
     }
 
-    private void GenerateMeshes()
+    private async void GenerateMeshes()
     {
         GameObject parentObject = _prefabGameFactory.CreateEmpty()
             .With(_ => _.name = ParentObjectName);
@@ -87,7 +87,7 @@ public class TerrainGenerator : ITerrainGenerator
                 _parameters.ChunkObject = _chunks[x, z];
 
                 Vector3 position = new Vector3(x * (int)_parameters.ChunkSize.x, 0f, z * (int)_parameters.ChunkSize.z);
-                var newObject = _prefabGameFactory.CreateChunk(position, parent: parentObject.transform);
+                var newObject = await _prefabGameFactory.CreateChunk(position, parent: parentObject.transform);
 
                 HandleGameObject(newObject);
             }

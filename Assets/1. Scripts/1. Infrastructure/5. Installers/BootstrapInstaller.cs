@@ -58,6 +58,5 @@ public class BootstrapInstaller : MonoInstaller
         if (!Application.isEditor) return;
         
         Container.Bind<DebugProvider>().AsSingle().NonLazy();
-        Container.Resolve<DebugProvider>().GizmozDrawer.Construct(Container.Resolve<MapProvider>());
     }
 }

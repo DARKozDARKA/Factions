@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CodeBase.Infastructure
@@ -6,7 +7,9 @@ namespace CodeBase.Infastructure
     {
         GameObject CreateEmpty(Vector3? at = null, Transform parent = null);
         GameObject CreateHero(GameObject at);
-        GameObject CreateChunk(Vector3 at, Transform parent = null);
-        GameObject CreateDebugObject(Transform parent = null);
+        Task<GameObject> CreateChunk(Vector3 at, Transform parent = null);
+        Task<GameObject> CreateDebugObject(Transform parent = null);
+        Task WarmUp();
+        void Cleanup();
     }
 }

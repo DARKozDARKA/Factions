@@ -32,12 +32,13 @@ namespace CodeBase.Infastructure
             _curtain.Hide();
         }
 
-        private void OnLoaded()
+        private async void OnLoaded()
         {
             _generator.OnLoaded -= OnLoaded;
             _provider.SetMap(_generator.GetTerrainMap());
             _layersGenerator.GenerateLayers();
-            _debugProvider.GizmozDrawer.SetMap();
+            var drawer = await _debugProvider.CreateDebugObject();
+            drawer.SetMap();
 
             _gameStateMachine.Enter<GameLoopState>();
         }
