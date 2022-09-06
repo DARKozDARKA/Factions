@@ -5,10 +5,10 @@ public class NavMeshSurfaceBaker
 {
     private const string ObjectName = "NavMeshSurface";
 
-    public void GenerateNavMesh(IPrefabGameFactory factory)
-    {
+    public void GenerateNavMesh(IPrefabGameFactory factory) =>
         factory.CreateEmpty()
-            .With(_ => _.AddComponent<NavMeshSurface>().BuildNavMesh())
-            .With(_ => _.name = ObjectName);
-    }
+            .AddComponent<NavMeshSurface>()
+            .With(_ => _.useGeometry = NavMeshCollectGeometry.PhysicsColliders)
+            .With(_ => _.BuildNavMesh())
+            .With(_ => _.gameObject.name = ObjectName);
 }

@@ -6,5 +6,6 @@ namespace CodeBase.Infastructure
     public interface INatureGameFactory
     {
         Task<GameObject> CreateNature(NatureData data, Vector3 at);
+        void CreateNatureRoot();
     }
 }

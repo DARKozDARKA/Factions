@@ -14,7 +14,7 @@ public abstract class LayerGenerator
 
     public abstract void GenerateLayer(TerrainMap map, INatureGameFactory natureFactory);
 
-    protected Vector3? SetRandomPosition(Vector2Int size)
+    protected Vector3? SetRandomPosition(Vector2Int size, StructureType structureType = StructureType.Null)
     {
         Vector2Int position = new Vector2Int(Random.Range(0, _map.mapSize.x * _map.chunkSize.x),
             Random.Range(0, _map.mapSize.y * _map.chunkSize.y));
@@ -25,7 +25,7 @@ public abstract class LayerGenerator
 
         Vector3 objectWorldPosition = new Vector3(position.x, _map.GetSurfaceBlock(fixedPosition).surfaceHeight,
             position.y);
-        _map.OccupieRect(fixedPosition, size);
+        _map.OccupieRect(fixedPosition, size, structureType);
 
         return objectWorldPosition;
     }

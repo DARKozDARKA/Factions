@@ -10,9 +10,11 @@ namespace CodeBase.Infastructure
         private GameStateMachine _gameStateMachine;
         private DebugProvider _debugProvider;
         private readonly ILayersGenerator _layersGenerator;
+        private readonly IPrefabGameFactory _gameFactory;
+        private readonly INatureGameFactory _natureGameFactory;
 
         public GenerateTerrainState(GameStateMachine gameStateMachine, ITerrainGenerator generator, LoadingCurtain curtain, MapProvider provider,
-        DebugProvider debugProvider, ILayersGenerator layersGenerator)
+        DebugProvider debugProvider, ILayersGenerator layersGenerator, IPrefabGameFactory gameFactory, INatureGameFactory natureGameFactory)
         {
             _gameStateMachine = gameStateMachine;
             _generator = generator;
@@ -20,6 +22,8 @@ namespace CodeBase.Infastructure
             _provider = provider;
             _debugProvider = debugProvider;
             _layersGenerator = layersGenerator;
+            _gameFactory = gameFactory;
+            _natureGameFactory = natureGameFactory;
         }
         public void Enter()
         {
@@ -36,7 +40,13 @@ namespace CodeBase.Infastructure
         {
             _generator.OnLoaded -= OnLoaded;
             _provider.SetMap(_generator.GetTerrainMap());
+            
+            _natureGameFactory.CreateNatureRoot();
+            
             _layersGenerator.GenerateLayers();
+            
+            new NavMeshSurfaceBaker().GenerateNavMesh(_gameFactory);
+            
             var drawer = await _debugProvider.CreateDebugObject();
             drawer.SetMap();
 

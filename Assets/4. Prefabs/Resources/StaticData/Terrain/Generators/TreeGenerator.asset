@@ -23,3 +23,4 @@ MonoBehaviour:
       data:
         NatureAmount: 500
         NaturePath: StaticData/Terrain/Objects/Trees
+        _structureType: 1

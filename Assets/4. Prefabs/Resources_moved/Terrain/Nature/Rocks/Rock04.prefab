@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3301993133061800520}
   - component: {fileID: 3311586095430476676}
   - component: {fileID: 2241545043045942748}
+  - component: {fileID: 5270467996282660233}
   m_Layer: 0
   m_Name: Rock_1_Iron
   m_TagString: Untagged
@@ -98,6 +99,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c12959699af6a5943a2ba6584b61e548, type: 3}
+--- !u!208 &5270467996282660233
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3288449094415004114}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.1000001, y: 0.5, z: 1.9000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.70000005, y: 0.5, z: -0.3}
+  m_TimeToStationary: 0.5
 --- !u!1 &3288501292365549290
 GameObject:
   m_ObjectHideFlags: 0

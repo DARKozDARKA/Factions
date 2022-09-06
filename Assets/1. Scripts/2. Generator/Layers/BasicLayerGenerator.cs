@@ -14,6 +14,9 @@ public class BasicLayerGenerator : LayerGenerator
     [SerializeField]
     private string NaturePath;
 
+    [SerializeField]
+    private StructureType _structureType;
+
     private NatureData[] _natures;
 
     public override void GenerateLayer(TerrainMap map, INatureGameFactory natureFactory)
@@ -27,7 +30,7 @@ public class BasicLayerGenerator : LayerGenerator
         for (int i = 0; i <= NatureAmount; i++)
         {
             NatureData natureData = GetRandomNature<NatureData>(_natures, Random.Range(0, 1f));
-            Vector3? objectWorldPosition = SetRandomPosition(new Vector2Int(natureData.Size.x, natureData.Size.z));
+            Vector3? objectWorldPosition = SetRandomPosition(new Vector2Int(natureData.Size.x, natureData.Size.z), _structureType);
             if (objectWorldPosition == null)
                 continue;
 

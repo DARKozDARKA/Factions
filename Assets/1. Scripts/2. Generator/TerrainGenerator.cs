@@ -14,7 +14,6 @@ public class TerrainGenerator : ITerrainGenerator
     private ChunkMeshGenerator _meshGenerator;
     private BlockTextureAtlas _atlas;
     private IPrefabGameFactory _prefabGameFactory;
-    private INatureGameFactory _natureFactory;
     private Material _material;
     private NavMeshSurfaceBaker _navMeshBaker;
     private TerrainMap _terrainMap;
@@ -22,16 +21,13 @@ public class TerrainGenerator : ITerrainGenerator
     private BasicLayerGenerator _basicLayerGeneratorGenerator;
     private TerrainMap _map;
 
-    private TerrainGenerator(BlockTextureAtlas textureAtlas, IPrefabGameFactory prefabFactory, IStaticDataService staticDataService, INatureGameFactory natureFactory)
+    private TerrainGenerator(BlockTextureAtlas textureAtlas, IPrefabGameFactory prefabFactory, IStaticDataService staticDataService)
     {
         SetParameters(staticDataService);
 
         _atlas = textureAtlas;
         _prefabGameFactory = prefabFactory;
-        _natureFactory = natureFactory;
-        _navMeshBaker = new NavMeshSurfaceBaker();
         _meshGenerator = new ChunkMeshGenerator(_atlas, _parameters.BlockSize, _parameters.ChunkSize);
-
 
         _material = _atlas.GetMaterial();
     }
@@ -42,8 +38,6 @@ public class TerrainGenerator : ITerrainGenerator
 
         GenerateChunks();
         GenerateMeshes();
-
-        _navMeshBaker.GenerateNavMesh(_prefabGameFactory);
 
         _map = new TerrainMap(_chunks, new Vector2Int(_parameters.ChunkSize.x, _parameters.ChunkSize.z), _parameters.MapSize);
         

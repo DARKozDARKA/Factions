@@ -22,13 +22,20 @@ namespace CodeBase.Infastructure
 
             _states = new Dictionary<Type, IExitableState>()
             {
-                {typeof(BootstrapState), new BootstrapState(this, _sceneLoader)},
-                {typeof(LoadLevelState), new LoadLevelState(this, _sceneLoader, curtain, container.Resolve<IAssetProvider>(), container.Resolve<IPrefabGameFactory>())},
-                {typeof(GenerateTerrainState), new GenerateTerrainState(this, container.Resolve<ITerrainGenerator>(), curtain, container.Resolve<MapProvider>(), 
-                    container.Resolve<DebugProvider>(), container.Resolve<ILayersGenerator>())},
-                {typeof(GameLoopState), new GameLoopState(this, _sceneLoader)}
+                { typeof(BootstrapState), new BootstrapState(this, _sceneLoader) },
+                {
+                    typeof(LoadLevelState),
+                    new LoadLevelState(this, _sceneLoader, curtain, container.Resolve<IAssetProvider>(),
+                        container.Resolve<IPrefabGameFactory>())
+                },
+                {
+                    typeof(GenerateTerrainState), new GenerateTerrainState(this, container.Resolve<ITerrainGenerator>(),
+                        curtain, container.Resolve<MapProvider>(),
+                        container.Resolve<DebugProvider>(), container.Resolve<ILayersGenerator>(),
+                        container.Resolve<IPrefabGameFactory>(), container.Resolve<INatureGameFactory>())
+                },
+                { typeof(GameLoopState), new GameLoopState(this, _sceneLoader) }
             };
-
         }
 
         public void Enter<TState>() where TState : class, IState
@@ -36,6 +43,7 @@ namespace CodeBase.Infastructure
             IState state = LoadState<TState>();
             state.Enter();
         }
+
         public void Enter<TState, TPayload>(TPayload payload) where TState : class, IPayloadedState<TPayload>
         {
             TState state = LoadState<TState>();
@@ -56,5 +64,3 @@ namespace CodeBase.Infastructure
         }
     }
 }
-
-
